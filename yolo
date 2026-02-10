@@ -1,0 +1,6 @@
+#!/bin/bash
+# create random commit the yolo way
+commit=$(curl https://whatthecommit.com/index.txt)
+
+git commit -m "$commit" 
+git push origin main
